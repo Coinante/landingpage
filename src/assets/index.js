@@ -9,6 +9,7 @@ import scene from "./scene.png";
 import mockup from "./mockup.png";
 import crypto from "./crypto.png";
 import dice from "./dice.png";
+import logo from "./logo.png";
 
 export default {
   homeHero,
@@ -21,5 +22,6 @@ export default {
   scene,
   mockup,
   crypto,
-  dice
+  dice,
+  logo
 };

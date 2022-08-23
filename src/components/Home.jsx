@@ -11,6 +11,7 @@ import Navbar from './Navbar';
 const Home = ({ title, description, showBtn, mockupImg, banner, reverse }) => {
   return (
     <>
+     
     <div className={`min-h-screen ${styles.section} 
       ${reverse ? styles.bgWhite : styles.bgPrimary} 
       ${banner}`}>

@@ -33,18 +33,18 @@ const Home = ({ title, description, showBtn, mockupImg, banner, reverse }) => {
           ${styles.descriptionText}`}>{description}</p>
           </div>
           
-          <div className='flex justify-start space-x-14'>
-          {showBtn && (
+          <div className='flex justify-center pl-1 space-x-14'>
+          {/* {showBtn && (
             <Button 
               assetUrl={assets.expo}
               link=""
             />
-          )}
+          )} */}
 
            {showBtn && (
             <Button2 
               assetUrl={assets.expo}
-              link="https://mute-unit-6558.on.fleek.co"
+              link="https://play.coinante.io"
             />
           )}
           </div>

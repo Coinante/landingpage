@@ -16,7 +16,7 @@ const Contact = () => {
       <div className={`${styles.subSection} flex-col text-center`}>
         <div>
           <h1 className={`${styles.h1Text} ${styles.whiteText}`}>Contact Us</h1>
-          <p className={`${styles.pText} ${styles.whiteText}`}>coinantecoin@gmail.com</p>
+          <p className={`${styles.pText} ${styles.whiteText}`}>contact@coinante.io</p>
         </div>
 
         <div className={styles.flexWrap}>

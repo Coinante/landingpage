@@ -20,9 +20,9 @@ const styles = {
   btnText: "text-white font-IBMPlex minmd:text-lg",
 
   btnPrimary:
-    "bg-primary mt-4 py-4 px-6 text-white text-lg minmd:text-2xl font-IBMPlex font-medium rounded-lg hover:shadow-2xl",
+    " self-center bg-primary mt-4 py-4 px-6 text-white text-lg minmd:text-2xl font-IBMPlex font-medium rounded-lg hover:shadow-2xl",
   btnBlack:
-    "bg-black flex items-center py-2 px-4 rounded-md mt-2 w-fit cursor-pointer",
+    "space-x-7 pl-2 self-center w-32 bg-black flex items-center py-2 px-4 rounded-md mt-2 w-fit cursor-pointer ",
 
   section: "flex justify-center items-center p-16 sm:p-8",
   subSection: "flex items-center w-full minmd:w-3/4",
@@ -34,7 +34,7 @@ const styles = {
   fullImg: "w-full h-full object-cover",
   // sectionImg: "w-full h-full minmd:w-11/12 minmd:h-11/12 object-contain",
   sectionImg: "object-scale-down h-70 w-96 ",
-  btnIcon: "w-5 h-5 minmd:w-10 minmd:h-10 object-contain",
+  btnIcon: "fill-white w-5 h-5 minmd:w-10 minmd:h-10 object-contain",
 
   featureImg: "w-20 h-20 minlg:w-40 minlg:h-40 object-contain mb-1",
   featureText:

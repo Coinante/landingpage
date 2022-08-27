@@ -33,7 +33,7 @@ const Home = ({ title, description, showBtn, mockupImg, banner, reverse }) => {
           ${styles.descriptionText}`}>{description}</p>
           </div>
           
-          <div className='flex justify-center pl-1 space-x-14'>
+          <div className='flex justify-center pl-1 space-x-4'>
           {/* {showBtn && (
             <Button 
               assetUrl={assets.expo}

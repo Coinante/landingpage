@@ -35,7 +35,7 @@ const App = () => {
           } />
           <Route path="/contact" element={<AboutUs
           title="Contact Us"
-        description="Coinntecoin@gmail.com"
+        description="contact@coinante.io"
         banner="banner"
           />} />
            <Route path="/aboutus" element={<AboutUs

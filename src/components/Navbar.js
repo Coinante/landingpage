@@ -2,16 +2,31 @@ import React from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
+import { useState } from "react";
+import MobileNavbar from "./MobileNavbar";
+import styled from "styled-components";
+
+
 
 const Navbar = ({ toggle }) => {
-  const navbarItems = [
+   const [open, setOpen] = useState(false);
+   const [close, setClose] = useState(false);
+  const NavbarItems = [
      {
-    title: "How to Play",
+    title: "How to Play  ",
     link: "/howtoplay",
   },
+  {
+    title: "|",
+    link: "",
+  },
     {
-    title: "About Us",
+    title: "About Us  ",
     link: "/aboutus",
+  },
+  {
+    title: "|",
+    link: "",
   },
   {
     title: "Contact",
@@ -19,9 +34,13 @@ const Navbar = ({ toggle }) => {
   },
 
 ];
-  return (
+
+
+
+
+  return (<>
     <nav >
-      <Link to="/" className="link">
+      <Link to="/" className="link ">
        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="150" height="150" viewBox="0 0 482.000000 139.000000"
  preserveAspectRatio="xMidYMid meet">
@@ -71,19 +90,30 @@ l11 -30 -100 0 c-91 0 -99 2 -99 19 0 11 14 31 31 45 35 30 92 35 126 11z"/>
       
       </Link>
       <div className="menu-items " >
-        {navbarItems.map((item, index) => (
+        {NavbarItems.map((item, index) => (
           <Link className="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-slate-100 hover:text-slate-900" to={item.link} key={index}>
             {item.title}
           </Link>
         ))}
       </div>
-      <div className="icons">
+      
+       <div className="icons ">
        
-        <div className="mobile-menu-icon">
-          <FaBars onClick={toggle} />
+        <div className="mobile-menu-icon bg-slate-300 ">
+          <FaBars onClick={() => setOpen(!open)} className="bg-white" />
+          {open &&  
+       
+        <MobileNavbar/>
+
+         
+          }
         </div>
       </div>
+     
     </nav>
+
+    
+    </>
   );
 };
 

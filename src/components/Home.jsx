@@ -6,13 +6,11 @@ import Button from './Button';
 import Button2 from './Button2';
 import Navbar from './Navbar';
 
- 
-
 const Home = ({ title, description, showBtn, mockupImg, banner, reverse }) => {
   return (
     <>
      
-    <div className={`min-h-screen ${styles.section} 
+    <div className={`min-h-fit ${styles.section} 
       ${reverse ? styles.bgWhite : styles.bgPrimary} 
       ${banner}`}>
         
@@ -55,9 +53,11 @@ const Home = ({ title, description, showBtn, mockupImg, banner, reverse }) => {
           <img src={mockupImg} alt="mockup" className={`
            ${reverse ? " fadeLeftMini" : " fadeRightMini" }
           ${styles.sectionImg}`}  />
+        
         </div>
       </div>
     </div>
+    
     </>
   )
 }

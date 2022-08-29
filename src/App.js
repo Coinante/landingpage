@@ -5,6 +5,8 @@ import styles from './styles/Global';
 import { Route, Routes } from "react-router-dom";
 import Navbar from './components/Navbar.js';
 
+ 
+
 const App = () => {
   return (
     <>
@@ -57,6 +59,7 @@ const App = () => {
         <span className="bold"></span>
         </p>
       </div>
+
 
     </>
   );

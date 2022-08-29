@@ -9,6 +9,10 @@ const MobileNavbar = ({ toggle }) => {
    const [open, setOpen] = useState(false);
    const [close, setClose] = useState(false);
   const NavbarItems = [
+    {
+    title: "Home",
+    link: "/",
+  },
      {
     title: "How to Play",
     link: "/howtoplay",
@@ -29,9 +33,11 @@ const MobileNavbar = ({ toggle }) => {
 
   return (
 
+     
      <nav id="dropdownNavbar" className=" rounded-bl relative h-32 w-40 float-right mt-40  mr-0 mobile-menu-icon justify-end  items-center  link flex flex-col drop-shadow-sm py-4 px-8 top-0 right-0 bottom-0 backdrop-blur-sm z-10 p-2 text-lg  bg-white border-primary border-inherit" >
+     <Link to="/" className="rounded-bl w-20 block p-2 text-lg border-t border-primary border-inherit hover:bg-slate-100 ">Home</Link>
       <Link to="/howtoplay" className="  w-20 block p-2 text-lg border-t border-primary border-inherit hover:bg-slate-100 ">How to Play</Link>
-       <Link to="/aboutus" className="w-20 block p-2 text-lg border-t border-primary border-inherit hover:bg-slate-100 " >About</Link>
+       <Link to="/aboutus" className="w-20 block p-2 text-lg border-t border-primary border-inherit hover:bg-slate-100 " >AboutUs</Link>
         <Link to="/contact" className="rounded-bl w-20 block p-2 text-lg border-t border-primary border-inherit hover:bg-slate-100 ">Contact</Link>
 
 

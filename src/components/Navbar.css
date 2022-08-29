@@ -51,4 +51,8 @@ nav {
     top: 0rem;
     right: 0rem;
   }
+  .logo {
+    cursor: pointer;
+    transform: translate(-30, 0);
+  }
 }

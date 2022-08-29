@@ -41,11 +41,12 @@ const Navbar = ({ toggle }) => {
   return (<>
     <nav >
       <Link to="/" className="link ">
-       <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+        <div >
+       <svg className="logo" version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="150" height="150" viewBox="0 0 482.000000 139.000000"
  preserveAspectRatio="xMidYMid meet">
 
-<g transform="translate(0.000000,139.000000) scale(0.100000,-0.100000)"
+<g transform="translate(-17.000000,140.000000) scale(0.100000,-0.100000)"
 fill="#0b65c6" stroke="none">
 <path d="M571 1149 c-199 -33 -371 -211 -402 -416 -40 -267 150 -523 419 -564
 267 -40 522 150 563 418 39 264 -149 522 -411 563 -74 11 -94 11 -169 -1z
@@ -87,7 +88,7 @@ l11 -30 -100 0 c-91 0 -99 2 -99 19 0 11 14 31 31 45 35 30 92 35 126 11z"/>
 <path d="M1820 650 l0 -260 80 0 80 0 0 260 0 260 -80 0 -80 0 0 -260z"/>
 </g>
 </svg>
-      
+      </div>
       </Link>
       <div className="menu-items " >
         {NavbarItems.map((item, index) => (
@@ -99,7 +100,7 @@ l11 -30 -100 0 c-91 0 -99 2 -99 19 0 11 14 31 31 45 35 30 92 35 126 11z"/>
       
        <div className="icons ">
        
-        <div className="mobile-menu-icon bg-slate-300 ">
+        <div className="mobile-menu-icon ">
           <FaBars onClick={() => setOpen(!open)} className="bg-white" />
           {open &&  
        

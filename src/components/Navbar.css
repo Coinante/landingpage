@@ -50,9 +50,9 @@ nav {
     cursor: pointer;
     top: 0rem;
     right: 0rem;
+    margin-right: -35px;
   }
-  .logo {
-    cursor: pointer;
-    transform: translate(-30, 0);
+  .navo {
+    margin-left: -25px;
   }
 }

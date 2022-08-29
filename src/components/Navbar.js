@@ -39,7 +39,7 @@ const Navbar = ({ toggle }) => {
 
 
   return (<>
-    <nav >
+    <nav className="navo" >
       <Link to="/" className="link ">
         <div >
        <svg className="logo" version="1.0" xmlns="http://www.w3.org/2000/svg"

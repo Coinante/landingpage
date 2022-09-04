@@ -37,7 +37,7 @@ const HowToPlay = ({ title, description, description2, description3, description
           
           <p className={`
           ${reverse ? styles.blackText : styles.whiteText}
-          ${styles.descriptionText}`}>{description4}  <a href="https://mute-unit-6558.on.fleek.co"> (Here) </a></p>
+          ${styles.descriptionText}`}>{description4}  <a href="https://play.coinante.io"> (Here) </a></p>
           </div>
           <div className='flex justify-start space-x-14'>
           {showBtn && (
